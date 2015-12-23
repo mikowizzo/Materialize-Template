@@ -16,6 +16,7 @@ Devise.setup do |config|
   config.sign_out_via = :delete
 
   require 'omniauth-google-oauth2'
+  OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development? 
   config.omniauth :google_oauth2, '554911005041-esm8iv7hkgpo2qllq5prj4hk91odq187.apps.googleusercontent.com', '5YsC1eaxOtoCa8L0hAq2VTyn', {access_type: "offline", approval_prompt: ""}
 
   require 'omniauth-facebook'
