@@ -17,10 +17,9 @@
 	<nav class="blue lighten-1 z-depth-1">
 		<div class="container">
 		    <div class="nav-wrapper">
-		      <a href="#!" class="brand-logo">Wizzkids</a>
+		      <a href="#!" class="brand-logo">Materialize</a>
 		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 		      <ul class="right hide-on-med-and-down">
-		        <li><a href="#">Classes</a></li>
 		        <% if(!user_signed_in?) %>
 			        <li><%= link_to "Sign Up", new_user_registration_path %></li>
 			        <li><%= link_to "Login", new_user_session_path %></li>
@@ -34,7 +33,6 @@
 		        
 		      </ul>
 		      <ul class="side-nav" id="mobile-demo">
-		        <li><a href="#">Classes</a></li>
 		        <% if(!user_signed_in?) %>
 			        <li><%= link_to "Sign Up", new_user_registration_path %></li>
 			        <li><%= link_to "Login", new_user_session_path %></li>
